@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		 	 x:Class="ParseSample.Pages.SignUpPage"
+		 	 Title="{Binding Path=Title}">
+	<ContentPage.Content>
+	<StackLayout Padding="5">
+		<Entry Placeholder="First Name" Text="{Binding FirstName, Mode=TwoWay}"></Entry>
+		<Entry Placeholder="Last Name" Text="{Binding LastName, Mode=TwoWay}"></Entry>
+		<Entry Placeholder="Username" Text="{Binding Username, Mode=TwoWay}"></Entry>
+		<Entry Placeholder="Email" Text="{Binding Email, Mode=TwoWay}"></Entry>
+		<Entry Placeholder="Password" Text="{Binding Password, Mode=TwoWay}" IsPassword="true"></Entry>
+		<Button Text="Sign up" Command="{Binding SignUpUserCommand}" />
+	</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
